@@ -1,0 +1,32 @@
+body {
+    background-color: rgba(153, 206, 241, 0.789);
+    margin: 0;
+}
+div {
+    display: block;
+}
+.navbar {
+    top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(141, 176, 200, 0.789);
+    padding: calc(0.5vh);
+}
+#titleText {
+    font-size: calc(3px + 1.5vh + 1.5vw);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.goalClass {
+    background-color: rgba(141, 176, 200, 0.789);
+    margin: calc(5px + 1vh + 1vw);
+    padding: 0.1%;
+    border-radius: 0.25rem;
+}
+.goal {
+    background-color: rgba(128, 197, 242, 0.789);
+    margin: 4%;
+    border-radius: 0.25rem;
+    text-align: center;
+    padding: 0.005%;
+}
