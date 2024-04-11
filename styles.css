@@ -1,27 +1,41 @@
 body {
     background-color: rgba(153, 206, 241, 0.789);
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    user-select: none;
 }
 div {
     display: block;
+    overflow: hidden;
 }
 .navbar {
     top: 0;
-    overflow: hidden;
     text-align: center;
     background-color: rgba(141, 176, 200, 0.789);
     padding: calc(0.5vh);
 }
 #titleText {
     font-size: calc(3px + 1.5vh + 1.5vw);
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
 }
 .goalClass {
     background-color: rgba(141, 176, 200, 0.789);
     margin: calc(5px + 1vh + 1vw);
     padding: 0.1%;
     border-radius: 0.25rem;
+    text-align: center;
+}
+.classText {
+    font-size: calc(2vh + 2vw);
+}
+.goalText {
+    font-size: calc(1.2vh + 1.2vw);
+}
+.editable {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }
 .goal {
     background-color: rgba(128, 197, 242, 0.789);
@@ -29,4 +43,18 @@ div {
     border-radius: 0.25rem;
     text-align: center;
     padding: 0.005%;
+}
+.add {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    background-color: rgba(128, 197, 242, 0.789);
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 0.25rem;
+}
+.add:hover {
+    background-color: rgba(119, 183, 225, 0.789);
 }
