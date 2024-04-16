@@ -62,3 +62,11 @@ div {
 .add:hover {
     background-color: rgba(119, 183, 225, 0.789);
 }
+.editArea {
+    background-color: rgba(128, 197, 242, 0.789);
+    margin: 2%;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 900;
+    width: fit-content;
+}

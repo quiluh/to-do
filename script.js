@@ -1,6 +1,7 @@
 function handleEditable(targetText) {
     // CREATE EDIT AREA
     let editArea = document.createElement("textarea");
+    editArea.classList.add("editArea");
     editArea.value = targetText.innerHTML;
 
     // EDIT
@@ -10,6 +11,7 @@ function handleEditable(targetText) {
         }
     }
 
+    // ENTERED
     editArea.onblur = function() {
         if (editArea.value.trim() === "") {
             editArea.parentNode.remove();
