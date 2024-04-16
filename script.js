@@ -1,5 +1,26 @@
-function handleEditable() {
-    
+function handleEditable(targetText) {
+    // CREATE EDIT AREA
+    let editArea = document.createElement("textarea");
+    editArea.value = targetText.innerHTML;
+
+    // EDIT
+    editArea.onkeydown = function(event) {
+        if (event.key == "Enter") {
+            this.blur();
+        }
+    }
+
+    editArea.onblur = function() {
+        if (editArea.value.trim() === "") {
+            editArea.parentNode.remove();
+        } else {
+            targetText.innerHTML = editArea.value;            
+        }
+        editArea.replaceWith(targetText);
+    }
+
+    targetText.replaceWith(editArea);
+    editArea.focus();
 }
 
 function newGoal(targetButton) {
@@ -8,7 +29,7 @@ function newGoal(targetButton) {
     goalText.classList.add("goalText","editable");
     goalText.textContent = "New Goal";
     goalText.onclick = function() {
-        handleEditable()
+        handleEditable(goalText)
     };
 
     // CREATE GOAL DIV
@@ -25,7 +46,7 @@ function newClass(targetButton) {
     classText.classList.add("classText","editable");
     classText.textContent = "New Class";
     classText.onclick = function() {
-        handleEditable()
+        handleEditable(classText)
     };
 
     // CREATE ADD

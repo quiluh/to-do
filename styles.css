@@ -56,6 +56,9 @@ div {
     border-radius: 0.25rem;
     margin-bottom: calc(1.5vh);
 }
+#classAdd {
+    margin-top: 2%;
+}
 .add:hover {
     background-color: rgba(119, 183, 225, 0.789);
 }
